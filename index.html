@@ -7,6 +7,8 @@
     <title>Wehostify</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <!--Font Awesome-->
+
     <!-- Google font Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +16,10 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-   
-    <link
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap" rel="stylesheet">
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                         <img src="images/wehostify logo.svg" />
                     </a>
                     <a href="#" class="logo">
-                        <img src="images/nav english.svg" />
+                        <!-- <img src="images/nav english.svg" /> -->
                     </a>
                     <a href="#" class="menu-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="white"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
@@ -43,7 +45,56 @@
                         <li class="from-top"><a href="">Pricing</a></li>
                         <li class="from-top"><a href="">WordPress</a></li>
                         <li class="from-top"><a href="">Website Builder</a></li>
-                        <li class="from-top"><a href="">Hosting</a></li>
+                        <li class="from-top dropdown">
+                            <a href="#" class="dropbtn" id="hosting-link">Hosting <span class="arrow">&#9662;</span></a>
+                            <ul class="dropdown-content" id="dropdown-content">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/web.svg">
+                                        <div class="text">
+                                            <span class="bold">Web hosting</span>
+                                            <span class="description">For small to medium websites</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/wordpress.svg">
+                                        <div class="text">
+                                            <span class="bold">WordPress hosting</span>
+                                            <span class="description">WordPress made easy</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/container.svg">
+                                        <div class="text">
+                                            <span class="bold">Container cloud server</span>
+                                            <span class="description">Run applications in light-weight containers</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/linux.svg">
+                                        <div class="text">
+                                            <span class="bold">Linux cloud server</span>
+                                            <span class="description">Run servers on Linux OS</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/windows.svg">
+                                        <div class="text">
+                                            <span class="bold">Windows cloud server</span>
+                                            <span class="description">Run servers on Windows OS</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="from-top"><a href="">Pro</a></li>
                         <li class="from-top"><a href="">Domains</a></li>
                     </ul>
@@ -84,7 +135,9 @@
 
         <!-- SERVICE SECTION -->
         <div class="service-section">
+             
             <div class="service-wrapper">
+                
                 <div class="service-top">
                     <h3>OUR SERVICES</h3>
                     <h2>Hosting that works as hard as you do!</h2>
@@ -125,6 +178,7 @@
             </div>
         </div>
 
+            
         <!-- CUTTING EDGE-->
         <div class="cutting-edge">
             <div class="edge-right"><img src="images/aboutus image.svg" /></div>
@@ -150,7 +204,7 @@
                     <h3>Starter Plan</h3>
                     <p>Everything you need to create your website.</p>
                     <span>US$ </span>
-                    <span style="font-weight: 1500; font-size: 32px;">10.2</span> 
+                    <span style="font-weight: 2000; font-size: 42px;">10.2</span> 
                     <p style="font-weight: bold;  color: black;">Annually</p>
                     <button class="plan-btn">Choose plan</button>
                     <hr>
@@ -175,7 +229,7 @@
                     <!-- <h2>US$ 15.5</h2>
                     <p>Annually</p> -->
                     <span>US$ </span>
-                    <span style="font-weight: 1500; font-size: 28px;">15.5</span> 
+                    <span style="font-weight: 2000; font-size: 42px;">15.5</span> 
                     <p style="font-weight: bold; color: black;">Annually</p>
                     <button class="plan-btn-popular">Choose plan</button>
                     <hr>
@@ -199,7 +253,7 @@
                     <!-- <h2>US$ 20.2</h2>
                     <p>Annually</p> -->
                     <span>US$ </span>
-                    <span style="font-weight: 1500; font-size: 28px;">20.2</span> 
+                    <span style="font-weight: 2000; font-size: 42px;">20.2</span> 
                     <p style="font-weight: bold; color: black;">Annually</p>
                     <button class="plan-btn">Choose plan</button>
                     <hr>
@@ -488,6 +542,35 @@
             <a href="#" class="cta-button">Get started now</a>
         </div>
 
+        <!-- Discount Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <!-- Close button on the left -->
+                <span class="close" id="closeModal">&times;</span>
+                
+                <div class="cloud-rocket">
+                    <img src="images/cloud.svg">
+                </div>
+                <!-- Rocket positioned in the top-right -->
+                <img src="images/rocket.svg" alt="Rocket" class="rocket-image">
+                
+                <h2>20% Off</h2>
+                <p>Get up to 20% Discount off all our Hosting Services.</p>
+    
+                <!-- Promo code box -->
+                <div class="promo-code">
+                    <span id="promoText">TAKEOFF2025</span>
+                    <button id="copyButton">
+                        <img src="images/copy.svg" alt="Copy">
+                    </button>
+                </div>
+    
+                <!-- Call to action button -->
+                <button class="btn">Buy a Hosting Plan Now</button>
+            </div>
+        </div>
+
+        
         <!-- FOOTER -->
         <footer>
             <div class="container">
@@ -554,6 +637,11 @@
                 </ul>
             </div>
         </footer>
+
+         <!-- DRONE -->
+         <div class="drone-container">
+            <img src="images/drone.svg" alt="Floating Drone" class="drone" id="drone">
+        </div>
         
     </div>  
     <script>
